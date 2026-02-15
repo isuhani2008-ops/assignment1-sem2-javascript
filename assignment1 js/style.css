@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("https://png.pngtree.com/thumb_back/fh260/background/20220212/pngtree-digitally-created-composite-showcasing-blue-carpet-event-design-photo-image_29386628.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+.title {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Layout */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Form Section */
+.eventform {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.eventform:hover {
+    transform: translateY(-4px);
+}
+
+.eventform label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+.eventform input,
+.eventform select,
+.eventform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.eventform input:focus,
+.eventform select:focus,
+.eventform textarea:focus {
+    border-color: #4ce6f1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(19, 215, 237, 0.3);
+}
+
+.eventform textarea {
+    resize: none;
+    height: 80px;
+}
+
+.eventform button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4ce6f1, #26919f);
+    color : white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.eventform button:hover {
+    transform: scale(1.03);
+}
+
+/* Event Section */
+.event {
+    flex: 2;
+    min-width: 350px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Top Buttons */
+.event button {
+    padding: 9px 14px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #56a7d9, #189ced);
+    color: white;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.event button:hover {
+    transform: translateY(-2px);
+}
+
+/* Cards Container */
+.cards {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    background: white;
+    width: 220px;
+    padding: 18px;
+    border-radius: 14px;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    transition: 0.25s;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/747/747310.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: bottom 10px right 10px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+/* Delete Button */
+.deletecard {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ff4d4d;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.deletecard:hover {
+    background: #e60000;
+}
+
+/* DOM Section */
+.dom {
+    width: 100%;
+    margin-top: 20px;
+    background: #e6f7ff;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    min-height: 70px;
+    font-weight: 500;
+}
